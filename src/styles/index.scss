@@ -14,6 +14,9 @@
 html{
   font-size: 16px;
 }
+body{
+  background: #000;
+}
 a{
   text-decoration: none;
 }
@@ -33,6 +36,10 @@ ul{
   @include res('padding-bottom', 8px);
   @include res('padding-left', 33px);
   @include res('padding-right', 33px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
 }
 .btn2{
   color: #FFF;
@@ -48,6 +55,10 @@ ul{
   @include res('border-radius', 32px);
   border: solid #08C;
   @include res('border-width', 1px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
 }
 .container{
   @include res('max-width', 1213px);
