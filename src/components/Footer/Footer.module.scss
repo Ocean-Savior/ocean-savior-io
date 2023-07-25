@@ -1,0 +1,65 @@
+@import '../../styles/mixins.scss';
+.footer{
+    @include res('padding-top', 94px);
+    @include res('padding-bottom', 94px);
+    background: #001824;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    color: #FFF;
+    text-align: center;
+    @include res('font-size', 42px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 123%;
+    @include res('margin-bottom', 94px);
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    @include res('gap', 50px);
+    width: 100%;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    &:nth-child(1){
+        @include res('width', 280px);
+    }
+    &:nth-child(2){
+        @include res('width', 220px);
+    }
+    &:nth-child(3){
+        @include res('width', 240px);
+    }
+    &:nth-child(3){
+        @include res('width', 200px);
+    }
+}
+.subtitle{
+    color: #FFF;
+    @include res('font-size', 20px);
+    font-style: normal;
+    font-weight: 400;
+    @include res('line-height', 27px);
+    @include res('margin-bottom', 19px);
+}
+.link{
+    color: #FFF;
+    font-family: Montserrat;
+    @include res('font-size', 19px);
+    font-style: normal;
+    font-weight: 100;
+    line-height: 163.158%;
+    opacity: 0.7;
+    display: block;
+    &+.link{
+        @include res('margin-top', 6px);
+    }
+}
