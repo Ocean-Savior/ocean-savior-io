@@ -2,6 +2,50 @@
 .intro{
     background: url('../../../public/intro.png') center bottom / cover no-repeat;
     @include res('margin-top', -120px);
-    @include res('padding-top', 120px);
-    @include res('height', 861px);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    color: #FFF;
+    text-align: center;
+    @include res('font-size', 96px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 96.4%;
+    @include res('margin-bottom', 5px);
+}
+.p{
+    color: rgba(255, 255, 255, 0.70);
+    text-align: center;
+    font-family: Montserrat;
+    @include res('font-size', 14px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 182.143%;
+    @include res('max-width', 819px);
+    @include res('margin-bottom', 35px);
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include res('gap', 20px);
+}
+.btn{
+    @include res('padding-top', 16px);
+    @include res('padding-bottom', 16px);
+    @include res('padding-left', 28px);
+    @include res('padding-right', 28px);
+    @include res('height', 64px);
+    &2{
+        @include res('height', 64px);
+    }
 }
