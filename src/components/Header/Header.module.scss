@@ -1,0 +1,49 @@
+@import '../../styles/mixins.scss';
+.header{
+    @include res('height', 120px);
+    @include res('padding-top', 36px);
+    @include res('padding-bottom', 36px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include res('gap', 20px);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    @include res('gap', 10px);
+    span{
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        @include res('font-size', 16px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 96.4%;
+    }
+    img{
+        @include res('width', 37px);
+        @include res('height', 36px);
+    }
+}
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include res('gap', 100px);
+}
+.link{
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    @include res('font-size', 16px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 187.5%;
+}

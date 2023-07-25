@@ -1,0 +1,15 @@
+@mixin media($size) {
+    @media (max-width:#{$size}px) {
+        @content;
+    }
+}
+
+$baseValueLarge: 1512px;
+$baseValueSmall: 360px;
+
+@mixin res($property, $value) {
+    #{$property}: calc(($value / $baseValueLarge) * 100vw);
+}
+@mixin resa ($property, $value) {
+    #{$property}: calc(($value / $baseValueSmall) * 100vw);
+}
