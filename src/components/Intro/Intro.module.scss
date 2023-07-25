@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include res('max-height', 861px);
 }
 .body{
     display: flex;
