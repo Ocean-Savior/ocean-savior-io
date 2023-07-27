@@ -42,11 +42,11 @@ const Partners = () => {
                         <div className={styles.roadItem}>
                             <p className={styles.roadTag}>Phase 03</p>
                             <p className={styles.roadYear}>2024</p>
-                            <p className={styles.roadP}>Development of new and improvement of existing technologies for cleaning the ocea</p>
-                            <p className={styles.roadP}>Creation of prototypes of ocean cleaning systems and verification of their operabili</p>
-                            <p className={styles.roadP}>Conclusion of contracts with shipbuilding companies for the production of special vessels for garbage collection at s</p>
-                            <p className={styles.roadP}>500.000+ holde</p>
-                            <p className={styles.roadP}>Buyback and b</p>
+                            <p className={styles.roadP}>Development of new and improvement of existing technologies for cleaning the oceans.</p>
+                            <p className={styles.roadP}>Creation of prototypes of ocean cleaning systems and verification of their operability.</p>
+                            <p className={styles.roadP}>Conclusion of contracts with shipbuilding companies for the production of special vessels for garbage collection at sea.</p>
+                            <p className={styles.roadP}>500.000+ holders.</p>
+                            <p className={styles.roadP}>Buyback and burn</p>
                             <p className={styles.roadP}>Donations to projects that are engaged in saving the world's oceans.</p>
                         </div>
                     </div>
