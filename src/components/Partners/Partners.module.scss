@@ -99,6 +99,7 @@
     &Row{
         display: flex;
         justify-content: space-between;
+        align-items: flex-start;
         @include res('gap', 60px);
     }
     &Item{
@@ -111,6 +112,28 @@
         @include res('padding-left', 20px);
         @include res('padding-right', 20px);
         position: relative;
+        &:nth-of-type(2){
+            &::before{
+                @include res('width', 28px);
+                @include res('height', 28px);
+                box-sizing: border-box;
+                background: #fff;
+                border: solid #08C;
+                @include res('border-width', 10px);
+                @include res('top', -46px);
+            }
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            @include res('top', -39px);
+            @include res('left', 30px);
+            @include res('width', 12px);
+            @include res('height', 12px);
+            border-radius: 50%;
+            background: #08C;
+            z-index: 1;
+        }
     }
     &Tag{
         color: rgba(255, 255, 255, 0.71);

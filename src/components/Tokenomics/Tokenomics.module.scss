@@ -1,0 +1,4 @@
+@import '../../styles/mixins.scss';
+.tokenomics{
+    @include res('padding-top', 140px);
+}

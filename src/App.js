@@ -5,6 +5,7 @@ import Intro from "./components/Intro/Intro";
 import Partners from "./components/Partners/Partners";
 import Plans from "./components/Plans/Plans";
 import Problem from "./components/Problem/Problem";
+import Tokenomics from "./components/Tokenomics/Tokenomics";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Problem />
       <Plans />
       <Partners />
+      <Tokenomics />
       <Footer />
     </div>
   );
