@@ -7,6 +7,11 @@
     align-items: center;
     justify-content: center;
     @include res('max-height', 861px);
+    @include media(576){
+        @include resa('margin-top', -80px);
+        @include resa('max-height', 861px);
+        @include resa('max-height', 915px);
+    }
 }
 .body{
     display: flex;
@@ -22,6 +27,10 @@
     font-weight: 400;
     line-height: 96.4%;
     @include res('margin-bottom', 5px);
+    @include media(576){
+        @include resa('font-size', 40px);
+        @include resa('margin-bottom', 10px);
+    }
 }
 .p{
     color: rgba(255, 255, 255, 0.70);
@@ -33,12 +42,23 @@
     line-height: 182.143%;
     @include res('max-width', 819px);
     @include res('margin-bottom', 35px);
+    @include media(576){
+        @include resa('font-size', 12px);
+        @include resa('margin-bottom', 35px);
+        max-width: 100%;
+    }
 }
 .row{
     display: flex;
     align-items: center;
     justify-content: center;
     @include res('gap', 20px);
+    @include media(576){
+        @include resa('gap', 15px);
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
 }
 .btn{
     @include res('padding-top', 16px);
@@ -46,7 +66,19 @@
     @include res('padding-left', 28px);
     @include res('padding-right', 28px);
     @include res('height', 64px);
+    @include media(576){
+        @include resa('padding-top', 12px);
+        @include resa('padding-bottom', 12px);
+        @include resa('padding-left', 28px);
+        @include resa('padding-right', 28px);
+        @include resa('height', 40px);
+        width: auto;
+    }
     &2{
         @include res('height', 64px);
+        @include media(576){
+            @include resa('height', 40px);
+            width: auto;
+        }
     }
 }

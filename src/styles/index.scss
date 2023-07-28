@@ -17,6 +17,9 @@ html{
 body{
   background: #000;
   color: #fff;
+  &.oh{
+    overflow: hidden;
+  }
 }
 a{
   text-decoration: none;
@@ -41,6 +44,10 @@ ul{
   align-items: center;
   justify-content: center;
   width: max-content;
+  @include media(576){
+    @include resa('font-size', 14px);
+    @include resa('border-radius', 32px);
+  }
 }
 .btn2{
   color: #FFF;
@@ -60,6 +67,12 @@ ul{
   align-items: center;
   justify-content: center;
   width: max-content;
+  @include media(576){
+    @include resa('font-size', 14px);
+    @include resa('border-radius', 32px);
+    @include resa('padding-left', 28px);
+    @include resa('padding-right', 28px);
+  }
 }
 .container{
   @include res('max-width', 1213px);

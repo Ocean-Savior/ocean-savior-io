@@ -6,6 +6,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 5000;
+    @include media(576){
+        height: auto;
+        @include resa('height', 80px);
+        @include resa('padding-top', 20px);
+        @include resa('padding-bottom', 20px);
+    }
 }
 .nav{
     display: flex;
@@ -18,6 +25,9 @@
     align-items: center;
     justify-content: flex-start;
     @include res('gap', 10px);
+    @include media(576){
+        @include resa('gap', 10px);
+    }
     span{
         color: #FFF;
         text-align: center;
@@ -26,10 +36,17 @@
         font-style: normal;
         font-weight: 700;
         line-height: 96.4%;
+        @include media(576){
+            @include resa('font-size', 16px);
+        }
     }
     img{
         @include res('width', 37px);
         @include res('height', 36px);
+        @include media(576){
+            @include resa('width', 37px);
+            @include resa('height', 37px);
+        }
     }
 }
 .list{
@@ -37,6 +54,25 @@
     align-items: center;
     justify-content: center;
     @include res('gap', 100px);
+    @include media(576){
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+        transition: 300ms ease-out;
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #005b89;
+        flex-direction: column;
+        @include resa('gap', 15px);
+        &.open{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
 }
 .link{
     color: #FFF;
@@ -46,8 +82,65 @@
     font-style: normal;
     font-weight: 500;
     line-height: 187.5%;
+    @include media(576){
+        @include resa('font-size', 18px);
+    }
 }
 .btn{
     font-weight: 700;
     font-family: Montserrat;
+    @include media(576){
+        display: none;
+    }
+}
+.button {
+    @include resa('width', 30px);
+    @include resa('height', 30px);
+    position: relative;
+    border: none;
+    outline: none;
+    background: none;
+    display: none;
+    @include media(576) {
+      display: block;
+    }
+
+    &.open {
+        .line,
+        &::before {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(135deg);
+        }
+        &::after {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-135deg);
+        }
+    }
+
+    &::before,
+    &::after,
+    .line {
+        transition: 0.5s;
+        position: absolute;
+        content: "";
+        left: 0;
+        width: 100%;
+        @include resa('height', 2px);
+        background: white;
+    }
+
+    &::before {
+        top: 20%;
+    }
+
+    &::after {
+        bottom: 20%;
+    }
+
+    .line {
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
