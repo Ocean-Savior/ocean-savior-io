@@ -65,9 +65,9 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: #005b89;
         flex-direction: column;
         @include resa('gap', 15px);
+        background: url('../../../public/menu.png') center bottom / cover no-repeat;
         &.open{
             opacity: 1;
             visibility: visible;
