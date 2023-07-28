@@ -3,6 +3,7 @@
     background: url('../../../public/partners.png') center top / cover no-repeat;
     isolation: isolate;
     position: relative;
+    z-index: 1;
     &::before{
         content: ''; 
         position: absolute;
@@ -90,7 +91,7 @@
     }
     &Track{
         @include res('height', 4px);
-        @include res('width', 1356px);
+        @include res('width', 1340px);
         background: #01679A;
         @include res('border-top-left-radius', 2px);
         @include res('border-bottom-left-radius', 2px);

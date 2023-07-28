@@ -1,0 +1,155 @@
+@import '../../styles/mixins.scss';
+.presale{
+    isolation: isolate;
+    position: relative;
+    @include res('padding-top', 100px);
+    &::before{
+        content: ''; 
+        position: absolute;
+        @include res('top', -308px);
+        left: 0;
+        width: 100%;
+        @include res('height', 1296px);
+        z-index: -1;
+        pointer-events: none;
+        background: url('../../../public/presale.png') center top / cover no-repeat;
+    }
+}
+.title{
+    color: #0089CD;
+    text-align: center;
+    @include res('font-size', 96px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    @include res('margin-bottom', 50px);
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include res('padding-right', 69px);
+    @include res('gap', 28px);
+}
+.item{
+    @include res('border-radius', 32px);
+    border: solid #0089CD;
+    @include res('border-width', 2px);
+    background: rgba(0, 0, 0, 0.10);
+    @include res('padding-top', 27px);
+    @include res('padding-left', 19px);
+    @include res('padding-right', 19px);
+    @include res('padding-bottom', 35px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include res('width', 494px);
+}
+.subtitle{
+    color: #FFF;
+    font-style: normal;
+    @include res('font-size', 20px);
+    @include res('letter-spacing', 1px);
+    font-weight: 400;
+    line-height: 125.4%;
+    @include res('margin-bottom', 16px);
+}
+.progress{
+    width: 100%;
+    @include res('height', 8px);
+    display: block;
+    @include res('border-radius', 4px);
+    background: rgba(0, 137, 205, 0.19);
+    @include res('margin-bottom', 33px);
+}
+.track{
+    @include res('border-radius', 4px);
+    height: 100%;
+    background: #0089CD;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    &+.row{
+        @include res('margin-top', 25px);
+    }
+}
+.name{
+    color: #0089CD;
+    @include res('font-size', 20px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125.4%;
+    @include res('letter-spacing', 1px);
+}
+.value{
+    color: rgba(255, 255, 255, 0.80);
+    text-align: right;
+    font-style: normal;
+    @include res('font-size', 20px);
+    font-weight: 400;
+    line-height: 125.4%;
+    letter-spacing: 1px;
+    @include res('letter-spacing', 1px);
+}
+.form{
+    @include res('margin-top', 33px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.info{
+    @include res('margin-top', 16px);
+    @include res('margin-bottom', 33px);
+    color: #FAFF00;
+    text-align: right;
+    @include res('font-size', 18px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    @include res('padding-right', 68px);
+}
+.input{
+    width: 100%;
+    @include res('height', 44px);
+    @include res('border-radius', 22px);
+    border: solid #0089CD;
+    color: #fff;
+    @include res('padding-left', 15px);
+    @include res('border-width', 2px);
+    background: rgba(255, 255, 255, 0.18);
+}
+.btn{
+    color: #0089CD;
+    text-align: right;
+    @include res('font-size', 18px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    @include res('margin-left', 17px);
+}
+.danger{
+    @include res('margin-top', 25px);
+    color: #F00;
+    text-align: center;
+    @include res('font-size', 14px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+.img{
+    @include res('width', 621px);
+    @include res('height', 621px);
+    line-height: 0;
+    img{
+        width: 100%;
+        height: 100%;
+        line-height: 0;
+    }
+}

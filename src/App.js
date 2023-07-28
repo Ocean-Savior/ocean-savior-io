@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import Intro from "./components/Intro/Intro";
 import Partners from "./components/Partners/Partners";
 import Plans from "./components/Plans/Plans";
+import Presale from "./components/Presale/Presale";
 import Problem from "./components/Problem/Problem";
 import Tokenomics from "./components/Tokenomics/Tokenomics";
 
@@ -17,6 +18,7 @@ function App() {
       <Plans />
       <Partners />
       <Tokenomics />
+      <Presale />
       <Footer />
     </div>
   );
