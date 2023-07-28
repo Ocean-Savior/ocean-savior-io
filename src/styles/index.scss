@@ -49,6 +49,7 @@ ul{
     @include resa('border-radius', 32px);
     @include resa('padding-top', 14px);
     @include resa('padding-bottom', 10px);
+    @include resa('height', 50px);
   }
 }
 .btn2{
@@ -76,6 +77,7 @@ ul{
     @include resa('padding-right', 28px);
     @include resa('padding-top', 14px);
     @include resa('padding-bottom', 10px);
+    @include resa('height', 50px);
   }
 }
 .container{

@@ -24,6 +24,8 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    position: relative;
+    z-index: 6;
     @include res('gap', 10px);
     @include media(576){
         @include resa('gap', 10px);
@@ -63,10 +65,11 @@
         position: fixed;
         top: 0;
         left: 0;
+        bottom: 0;
         width: 100%;
-        height: 100%;
         flex-direction: column;
         @include resa('gap', 15px);
+        z-index: 5;
         background: url('../../../public/menu.png') center bottom / cover no-repeat;
         &.open{
             opacity: 1;
@@ -101,6 +104,7 @@
     outline: none;
     background: none;
     display: none;
+    z-index: 6;
     @include media(576) {
       display: block;
     }

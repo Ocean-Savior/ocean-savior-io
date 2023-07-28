@@ -71,13 +71,13 @@
         @include resa('padding-bottom', 10px);
         @include resa('padding-left', 28px);
         @include resa('padding-right', 28px);
-        @include resa('height', 40px);
+        @include resa('height', 50px);
         width: auto;
     }
     &2{
         @include res('height', 64px);
         @include media(576){
-            @include resa('height', 40px);
+            @include resa('height', 50px);
             width: auto;
         }
     }
