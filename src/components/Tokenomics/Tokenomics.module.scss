@@ -3,6 +3,8 @@
     @include res('padding-top', 60px);
     position: relative;
     z-index: 1;
+    overflow-x: hidden;
+    width: 100%;
     @include media(576){
         @include resa('padding-top', 70px);
     }

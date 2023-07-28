@@ -2,6 +2,8 @@
 .about{
     background: #000;
     color: #fff;
+    overflow-x: hidden;
+    width: 100%;
     &2{
         @include res('padding-top', 100px);
         @include media(576){
