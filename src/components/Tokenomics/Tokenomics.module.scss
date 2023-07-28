@@ -3,6 +3,9 @@
     @include res('padding-top', 60px);
     position: relative;
     z-index: 1;
+    @include media(576){
+        @include resa('padding-top', 70px);
+    }
 }
 .title{
     color: #0089CD;
