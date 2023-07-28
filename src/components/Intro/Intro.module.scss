@@ -67,8 +67,8 @@
     @include res('padding-right', 28px);
     @include res('height', 64px);
     @include media(576){
-        @include resa('padding-top', 12px);
-        @include resa('padding-bottom', 12px);
+        @include resa('padding-top', 14px);
+        @include resa('padding-bottom', 10px);
         @include resa('padding-left', 28px);
         @include resa('padding-right', 28px);
         @include resa('height', 40px);
