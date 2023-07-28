@@ -6,14 +6,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Plans = () => {
     const text = useRef([]);
-    const missionContent = useRef(null);
 
     useEffect(() => {
         const textAnimation = text.current;
-        const missionContentAnimation = missionContent.current;
 
         gsap.set(textAnimation, { opacity: 0, y: 100 });
-        gsap.set(missionContentAnimation, { opacity: 0, xPercent: 20 });
 
         gsap.to(textAnimation, {
             opacity: 1,
@@ -22,18 +19,6 @@ const Plans = () => {
             duration: 0.7,
             scrollTrigger: {
                 trigger: textAnimation,
-                start: "top 80%", 
-                end: "bottom 20%",
-                toggleActions: "play none none none",
-            },
-        });
-
-        gsap.to(missionContentAnimation, {
-            opacity: 1,
-            xPercent: 0,
-            duration: 0.7,
-            scrollTrigger: {
-                trigger: missionContentAnimation,
                 start: "top 80%", 
                 end: "bottom 20%",
                 toggleActions: "play none none none",
