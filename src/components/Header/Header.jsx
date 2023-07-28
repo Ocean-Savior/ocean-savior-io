@@ -14,7 +14,7 @@ const Header = () => {
                         <a href="#tokenomics" className={styles.link}>Tokenomics</a>
                     </li>
                     <li className={styles.li}>
-                        <a href="#whitepaper" className={styles.link}>Whitepaper</a>
+                        <a href="#presale" className={styles.link}>Whitepaper</a>
                     </li>
                     <li className={styles.li}>
                         <a href="#mission" className={styles.link}>Mission</a>

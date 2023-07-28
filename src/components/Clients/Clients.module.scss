@@ -1,0 +1,5 @@
+@import '../../styles/mixins.scss';
+.clients{
+    @include res('padding-top', 140px);
+    @include res('padding-top', 56px);
+}
