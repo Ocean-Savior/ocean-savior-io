@@ -2,6 +2,10 @@
 .clients{
     @include res('padding-top', 200px);
     @include res('padding-bottom', 100px);
+    @include media(576){
+        @include resa('padding-top', 70px);
+        @include resa('padding-bottom', 70px);
+    }
 }
 .body{
     display: flex;
@@ -9,43 +13,82 @@
     @include res('gap', 40px);
     justify-content: center;
     align-items: center;
+    @include media(576){
+        @include resa('gap', 40px);
+    }
     img{
         object-fit: contain;
         &:nth-of-type(1){
             @include res('width', 260px);
             @include res('height', 65.28px);
+            @include media(576){
+                @include resa('width', 130px);
+                @include resa('height', 32.64px);
+            }
         }
         &:nth-of-type(2){
             @include res('width', 260px);
             @include res('height', 62.1px);
+            @include media(576){
+                @include resa('width', 130px);
+                @include resa('height', 31.05px);
+            }
         }
         &:nth-of-type(3){
             @include res('width', 260px);
             @include res('height', 59.8px);
+            @include media(576){
+                @include resa('width', 130px);
+                @include resa('height', 29.9px);
+            }
         }
         &:nth-of-type(4){
             @include res('width', 260px);
             @include res('height', 77.84px);
+            @include media(576){
+                @include resa('width', 130px);
+                @include resa('height', 38.92px);
+            }
         }
         &:nth-of-type(5){
             @include res('width', 260px);
             @include res('height', 69px);
+            @include media(576){
+                @include resa('width', 130px);
+                @include resa('height', 34.5px);
+            }
         }
         &:nth-of-type(6){
             @include res('width', 197px);
             @include res('height', 97px);
+            @include media(576){
+                @include resa('width', 98.5px);
+                @include resa('height', 48.5px);
+            }
         }
         &:nth-of-type(7){
             @include res('width', 321px);
             @include res('height', 44px);
+            @include media(576){
+                @include resa('width', 160.5px);
+                @include resa('height', 22px);
+            }
         }
         &:nth-of-type(8){
             @include res('width', 368px);
             @include res('height', 52px);
+            @include media(576){
+                @include resa('width', 184px);
+                @include resa('height', 26px);
+            }
         }
         &:nth-of-type(9){
             @include res('width', 344px);
             @include res('height', 61px);
+            @include media(576){
+                @include resa('width', 172px);
+                @include resa('height', 30.5px);
+            }
         }
     }
 }
