@@ -1,5 +1,51 @@
 @import '../../styles/mixins.scss';
 .clients{
-    @include res('padding-top', 140px);
-    @include res('padding-top', 56px);
+    @include res('padding-top', 200px);
+    @include res('padding-bottom', 100px);
+}
+.body{
+    display: flex;
+    flex-wrap: wrap;
+    @include res('gap', 40px);
+    justify-content: center;
+    align-items: center;
+    img{
+        object-fit: contain;
+        &:nth-of-type(1){
+            @include res('width', 260px);
+            @include res('height', 65.28px);
+        }
+        &:nth-of-type(2){
+            @include res('width', 260px);
+            @include res('height', 62.1px);
+        }
+        &:nth-of-type(3){
+            @include res('width', 260px);
+            @include res('height', 59.8px);
+        }
+        &:nth-of-type(4){
+            @include res('width', 260px);
+            @include res('height', 77.84px);
+        }
+        &:nth-of-type(5){
+            @include res('width', 260px);
+            @include res('height', 69px);
+        }
+        &:nth-of-type(6){
+            @include res('width', 197px);
+            @include res('height', 97px);
+        }
+        &:nth-of-type(7){
+            @include res('width', 321px);
+            @include res('height', 44px);
+        }
+        &:nth-of-type(8){
+            @include res('width', 368px);
+            @include res('height', 52px);
+        }
+        &:nth-of-type(9){
+            @include res('width', 344px);
+            @include res('height', 61px);
+        }
+    }
 }
