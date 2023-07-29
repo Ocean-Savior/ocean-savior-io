@@ -4,9 +4,20 @@ import styles from './Header.module.scss';
 const Header = () => {
     const [menuOpened, setMenuOpened] = useState(false);
 
-    const setMenu = () => {
-        setMenuOpened(!menuOpened)
-        document.body.classList.toggle('oh')
+    const openMenu = () => {
+        if(menuOpened){
+            closeMenu()
+        }else{
+            setMenuOpened(true)
+            document.body.classList.add('oh')
+        }
+    }
+
+    const closeMenu = () => {
+        if(menuOpened){
+            setMenuOpened(false)
+            document.body.classList.remove('oh')
+        }
     }
 
     return (
@@ -18,17 +29,17 @@ const Header = () => {
                 </a>
                 <ul className={`${styles.list} ${menuOpened ? styles.open : ''}`}>
                     <li className={styles.li}>
-                        <a href="#tokenomics" className={styles.link} onClick={() => setMenu()}>Tokenomics</a>
+                        <a href="#tokenomics" className={styles.link} onClick={() => closeMenu()}>Tokenomics</a>
                     </li>
                     <li className={styles.li}>
-                        <a href="#presale" className={styles.link} onClick={() => setMenu()}>Whitepaper</a>
+                        <a href="https://drive.google.com/file/d/1Am1zH3ktkYbcgbWK0YDs2plFBdnusCbV/view" target="_blank" rel="noreferrer" className={styles.link} onClick={() => closeMenu()}>Whitepaper</a>
                     </li>
                     <li className={styles.li}>
-                        <a href="#mission" className={styles.link} onClick={() => setMenu()}>Mission</a>
+                        <a href="#mission" className={styles.link} onClick={() => closeMenu()}>Mission</a>
                     </li>
                 </ul>
                 <a href="#connect" className={`btn ${styles.btn}`}>Connect Wallet</a>
-                <button className={`${styles.button} ${menuOpened ? styles.open : ''}`} onClick={() => setMenu()}>
+                <button className={`${styles.button} ${menuOpened ? styles.open : ''}`} onClick={() => openMenu()}>
                     <span className={styles.line}></span>
                 </button>
             </nav>

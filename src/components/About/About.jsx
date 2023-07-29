@@ -77,7 +77,7 @@ const About = () => {
                     <div className={styles.content} ref={aboutContent}>
                         <h2 className={styles.title}>About project</h2>
                         <p className={styles.p}>OceanSavior (OSR) is a cryptocurrency with a special focus on the protection and preservation of the world's oceans. Our mission is to engage the global community in addressing critical issues of ocean pollution and the threat to marine ecosystems, stimulating innovation, and supporting projects aimed at cleaning and restoring the oceanic environment.</p>
-                        <a href="#presale" className={`btn2 ${styles.btn}`}>Whitepaper</a>
+                        <a href="https://drive.google.com/file/d/1Am1zH3ktkYbcgbWK0YDs2plFBdnusCbV/view" target="_blank" rel="noreferrer" className={`btn2 ${styles.btn}`}>Whitepaper</a>
                     </div>
                     <div className={styles.img} ref={aboutImage}>
                         <img src="/about.png" alt=""/>
@@ -89,7 +89,7 @@ const About = () => {
                     <div className={styles.content} ref={missionContent}>
                         <h2 className={styles.title}>Mission</h2>
                         <p className={styles.p}>Our mission is to contribute to the creation of healthy, clean, and sustainable oceans for future generations. We aim to be a catalyst for change, mobilizing investments, resources, and ideas in service of the common goal - the protection of our global oceans from pollution and destruction.</p>
-                        <a href="#presale" className={`btn2 ${styles.btn}`}>Whitepaper</a>
+                        <a href="https://drive.google.com/file/d/1Am1zH3ktkYbcgbWK0YDs2plFBdnusCbV/view" target="_blank" rel="noreferrer" className={`btn2 ${styles.btn}`}>Whitepaper</a>
                     </div>
                     <div className={styles.img} ref={missionImage}>
                         <img src="/mission.png" alt=""/>

@@ -46,6 +46,10 @@ ul{
   align-items: center;
   justify-content: center;
   width: max-content;
+  transition: 300ms ease-out;
+  &:hover{
+    transform: translateY(-4px);
+  }
   @include media(576){
     @include resa('font-size', 14px);
     @include resa('border-radius', 32px);
@@ -72,6 +76,10 @@ ul{
   align-items: center;
   justify-content: center;
   width: max-content;
+  transition: 300ms ease-out;
+  &:hover{
+    background: #08C;
+  }
   @include media(576){
     @include resa('font-size', 14px);
     @include resa('border-radius', 32px);

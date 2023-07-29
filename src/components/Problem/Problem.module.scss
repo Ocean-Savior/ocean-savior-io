@@ -41,7 +41,7 @@
     @include res('margin-bottom', 40px);
     @include res('max-width', 1013px);
     @include media(576){
-        @include resa('font-size', 14px);
+        @include resa('font-size', 12px);
         @include resa('margin-bottom', 20px);
         @include resa('max-width', 1013px);
     }
