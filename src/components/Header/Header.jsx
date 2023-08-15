@@ -37,6 +37,7 @@ const Header = () => {
                     <li className={styles.li}>
                         <a href="#mission" className={styles.link} onClick={() => closeMenu()}>Mission</a>
                     </li>
+                    <a href="#connect" className={`btn ${styles.btn}`}>Connect Wallet</a>
                 </ul>
                 <a href="#connect" className={`btn ${styles.btn}`}>Connect Wallet</a>
                 <button className={`${styles.button} ${menuOpened ? styles.open : ''}`} onClick={() => openMenu()}>
