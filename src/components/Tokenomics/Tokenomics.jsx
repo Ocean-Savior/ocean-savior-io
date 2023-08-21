@@ -85,7 +85,7 @@ const Tokenomics = () => {
                         </div>
                         <div className={`${styles.item} ${styles.small}`} ref={(e) => rightToLeft.current.push(e)}>
                             <div className={styles.tag}>Buy Tax</div>
-                            <p className={styles.p}>10% Sell Tax</p>
+                            <p className={styles.p}>10% Buy Tax</p>
                             <p className={styles.p}>2% Backflow</p>
                             <p className={styles.p}>2% Burn</p>
                             <p className={styles.p}>2% Marketing</p>

@@ -9,20 +9,24 @@ import Presale from "./components/Presale/Presale";
 import Problem from "./components/Problem/Problem";
 import Tokenomics from "./components/Tokenomics/Tokenomics";
 
+import { AppProvider } from "./hooks/AppContext";
+
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Intro />
-      <About />
-      <Problem />
-      <Plans />
-      <Partners />
-      <Tokenomics />
-      <Presale />
-      <Clients />
-      <Footer />
-    </div>
+    <AppProvider>
+      <div className="App">
+        <Header />
+        <Intro />
+        <About />
+        <Problem />
+        <Plans />
+        <Partners />
+        <Tokenomics />
+        <Presale />
+        <Clients />
+        <Footer />
+      </div>
+    </AppProvider>
   );
 }
 

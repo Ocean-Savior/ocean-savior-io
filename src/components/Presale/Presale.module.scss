@@ -227,3 +227,26 @@
         line-height: 0;
     }
 }
+.buy_btn{
+    @include res('margin-bottom', 32px);
+    @include res('padding-top', 16px);
+    @include res('padding-bottom', 16px);
+    @include res('padding-left', 28px);
+    @include res('padding-right', 28px);
+    @include res('height', 64px);
+    @include media(576){
+        @include resa('padding-top', 14px);
+        @include resa('padding-bottom', 10px);
+        @include resa('padding-left', 28px);
+        @include resa('padding-right', 28px);
+        @include resa('height', 50px);
+        width: auto;
+    }
+    &2{
+        @include res('height', 64px);
+        @include media(576){
+            @include resa('height', 50px);
+            width: auto;
+        }
+    }
+}
