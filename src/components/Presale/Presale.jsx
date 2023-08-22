@@ -3,7 +3,6 @@ import styles from "./Presale.module.scss";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { ethers } from "ethers";
-import { useProvider } from "wagmi";
 import { useAppContext } from "../../hooks/AppContext.js";
 import auctionArtifact from "../../web3/token-sale.json";
 
