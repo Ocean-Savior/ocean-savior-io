@@ -77,15 +77,15 @@ const Presale = () => {
             </div>
             <div className={styles.row}>
               <p className={styles.name}>Min buy:</p>
-              <p className={styles.value}>25 BNB</p>
+              <p className={styles.value}>0.12 BNB</p>
             </div>
             <div className={styles.row}>
               <p className={styles.name}>Max buy:</p>
-              <p className={styles.value}>10.000 BNB</p>
+              <p className={styles.value}>45 BNB</p>
             </div>
             <div className={styles.row}>
               <p className={styles.name}>Price:</p>
-              <p className={styles.value}>0.2 BNB</p>
+              <p className={styles.value}>0.0009 BNB</p>
             </div>
             <div className={styles.row}>
               <p className={styles.name}>Left total:</p>
@@ -103,10 +103,10 @@ const Presale = () => {
             <button type="disabled" className={`btn ${styles.buy_btn}`}>
               Buy
             </button>
-            <div className={styles.row}>
+            {/* <div className={styles.row}>
               <p className={styles.name}>Your balance:</p>
               <p className={styles.value}>100.000.000 OSR</p>
-            </div>
+            </div> */}
             {/* <p className={styles.danger}>you can claim tokens after presale</p> */}
           </div>
           <div className={styles.img}>
