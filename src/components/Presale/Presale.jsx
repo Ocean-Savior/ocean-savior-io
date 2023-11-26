@@ -77,7 +77,7 @@ const Presale = () => {
             </div>
             <div className={styles.row}>
               <p className={styles.name}>Min buy:</p>
-              <p className={styles.value}>0.12 BNB</p>
+              <p className={styles.value}>0.012 BNB</p>
             </div>
             <div className={styles.row}>
               <p className={styles.name}>Max buy:</p>
