@@ -85,7 +85,7 @@ const Presale = () => {
             </div>
             <div className={styles.row}>
               <p className={styles.name}>Price:</p>
-              <p className={styles.value}>0.0009 BNB</p>
+              <p className={styles.value}>0.00009 BNB</p>
             </div>
             <div className={styles.row}>
               <p className={styles.name}>Left total:</p>
