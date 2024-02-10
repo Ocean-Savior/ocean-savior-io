@@ -22,7 +22,7 @@ const Footer = () => {
                     </div>
                     <div className={styles.item}>
                         <h3 className={styles.subtitle}>Discord</h3>
-                        <a href="https://discord.com/invite/dZJTxZyFyM" target="_blank" rel="noreferrer" className={styles.link}>OceanSavior Server</a>
+                        <a href="https://discord.gg/Zz7EB5kw" target="_blank" rel="noreferrer" className={styles.link}>OceanSavior Server</a>
                     </div>
                     <div className={styles.item}>
                         <h3 className={styles.subtitle}>Medium</h3>
