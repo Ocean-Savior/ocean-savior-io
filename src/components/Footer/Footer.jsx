@@ -18,11 +18,11 @@ const Footer = () => {
                     </div>
                     <div className={styles.item}>
                         <h3 className={styles.subtitle}>Twitter</h3>
-                        <a href="https://twitter.com/oceansavior_osr" target="_blank" rel="noreferrer" className={styles.link}>@oceansavior</a>
+                        <a href="https://twitter.com/ocean_savior_" target="_blank" rel="noreferrer" className={styles.link}>@oceansavior</a>
                     </div>
                     <div className={styles.item}>
                         <h3 className={styles.subtitle}>Discord</h3>
-                        <a href="https://discord.gg/Zz7EB5kw" target="_blank" rel="noreferrer" className={styles.link}>OceanSavior Server</a>
+                        <a href="https://discord.gg/f8gmQf9E7n" target="_blank" rel="noreferrer" className={styles.link}>OceanSavior Server</a>
                     </div>
                     <div className={styles.item}>
                         <h3 className={styles.subtitle}>Medium</h3>
